@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+    color: #495057;
+}
+
+header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main, .form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+#noteType, #noteTitle, #noteContent, #addNoteButton {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#noteTitle, #noteContent {
+    resize: vertical;
+}
+
+#addNoteButton {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#addNoteButton:hover {
+    background-color: #218838;
+}
+
+.note {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #17a2b8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.note h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.remove-note {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.remove-note:hover {
+    background-color: #c82333;
+}
+
+.toggle-container, label[for="editMode"], input#editMode {
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+label[for="editMode"] {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+input#editMode {
+    transform: scale(1.2);
+}
+
+@media (min-width: 576px) {
+    #noteType, #noteTitle, #noteContent {
+        flex: 1;
+    }
+
+    #addNoteButton {
+        flex: 0 0 auto;
+    }
+}

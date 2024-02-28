@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="build/models/Note.js" defer></script>
+    <script src="build/models/Task.js" defer></script>
+    <script src="build/models/Meeting.js" defer></script>
+    <script src="build/models/SportsAndLeisure.js" defer></script>
+    <script src="build/interfaces/ITasks.js" defer></script>
+    <script src="build/interfaces/IMeetings.js" defer></script>
+    <script src="build/interfaces/ISportsAndLeisure.js" defer></script>
+    <script src="build/functions/NoteFunction.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Note Application</h1>
+        <div class="toggle-container">
+            <label for="editMode">Edit Mode</label>
+            <input type="checkbox" id="editMode">
+        </div>
+    </header>
+    <main>
+        
+        <div id="dynamicInputs"></div>
+        <select id="noteType"> 
+            <option value="">Select a type</option>
+            <option value="task">task</option>
+            <option value="meeting">meeting</option>
+            <option value="sportsAndLeisure">sportsAndLeisure</option>
+        </select>
+        <button id="addNoteButton">Add Note</button>
+        <div id="notesContainer"></div>
+    </main>
+    
+</body>
+</html>

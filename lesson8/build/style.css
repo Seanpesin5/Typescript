@@ -1,0 +1,157 @@
+body;
+{
+    font - family;
+    Arial, sans - serif;
+    background - color;
+    #f4f4f4;
+    margin: 0;
+    padding: 20;
+    px;
+}
+header;
+{
+    background: #;
+    333;
+    color: #fff;
+    padding: 10;
+    px;
+    0;
+    text - align;
+    center;
+}
+h1;
+{
+    margin: 0;
+}
+main;
+{
+    max - width;
+    800;
+    px;
+    margin: auto;
+}
+, ;
+{
+    background: #fff;
+    margin: 20;
+    px;
+    0;
+    padding: 20;
+    px;
+    border - radius;
+    8;
+    px;
+    box - shadow;
+    0;
+    2;
+    px;
+    4;
+    px;
+    rgba(0, 0, 0, 0.1);
+}
+, ;
+{
+    display: block;
+    width: 100 % ;
+    padding: 10;
+    px;
+    margin: 10;
+    px;
+    0;
+    border - radius;
+    5;
+    px;
+    border: 1;
+    px;
+    solid;
+    #ddd;
+}
+#addNoteButton;
+{
+    background - color;
+    #;
+    5;
+    cb85c;
+    color: white;
+    border - color;
+    #;
+    4;
+    cae4c;
+    cursor: pointer;
+}
+#addNoteButton;
+hover;
+{
+    background - color;
+    #;
+    449;
+    d44;
+    border - color;
+    #;
+    398439;
+}
+note;
+{
+    background: #f9f9f9;
+    padding: 10;
+    px;
+    margin - bottom;
+    20;
+    px;
+    border - left;
+    5;
+    px;
+    solid;
+    #;
+    5;
+    cb85c;
+}
+note;
+h3;
+{
+    margin - top;
+    0;
+}
+remove - note;
+{
+    background - color;
+    #d9534f;
+    color: white;
+    border: none;
+    padding: 5;
+    px;
+    10;
+    px;
+    border - radius;
+    5;
+    px;
+    cursor: pointer;
+    float: right;
+}
+remove - note;
+hover;
+{
+    background - color;
+    #c9302c;
+}
+toggle - container;
+{
+    text - align;
+    right;
+    padding: 10;
+    px;
+}
+label[];
+for ( = "editMode"; ; )
+    ;
+{
+    color: white;
+    margin - right;
+    10;
+    px;
+}
+input;
+#editMode;
+{
+    transform: scale(1.5);
+}
