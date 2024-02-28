@@ -1,0 +1,4 @@
+interface ITasks {
+    lastExecutionDate: string;
+    
+}
